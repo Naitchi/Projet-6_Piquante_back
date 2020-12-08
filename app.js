@@ -10,7 +10,7 @@ const sauceRoutes = require("./routes/sauces");
 const userRoutes = require("./routes/user");
 
 mongoose
-  .connect(process.env.MONGO_LINK, {
+  .connect(process.env.MONGOOSE_SECRET_TOKEN, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
